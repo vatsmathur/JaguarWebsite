@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "brand": "Jaguar XE",
+        "year": "2018",
+        "price": "$35,725",
+        "imageUrl": "https://ibb.co/h0wvu7",
+        "description": "First of a new generation, the XE is built to exceed all expectations of a compact luxury sport sedan."
+    },
+    {
+        "id": 1,
+        "brand": "Jaguar XF",
+        "year": "2018",
+        "price": "$55,890",
+        "imageUrl": "https://ibb.co/kU2Dgn",
+        "description": "Striking contemporary style meets superb craftsmanship in the mid-sized XF."
+    },
+    {
+        "id": 1,
+        "brand": "Jaguar XJ",
+        "year": "2018",
+        "price": "$75,285",
+        "imageUrl": "https://ibb.co/kiWjnS",
+        "description": "Premium luxury sedan, spacious and beautiful yet powerfully agile."
+    },
+    {
+        "id": 1,
+        "brand": "Jaguar E-Pace",
+        "year": "2018",
+        "price": "38,725",
+        "imageUrl": "https://ibb.co/gRztgn",
+        "description": "First of a new generation, the XE is built to exceed all expectations of a compact luxury sport sedan.."
+    },
+    {
+        "id": 1,
+        "brand": "Jaguar F-Pace",
+        "year": "2018",
+        "price": "$42,625",
+        "imageUrl": "https://ibb.co/eW1jnS",
+        "description": "Luxury performance SUV offering practicality and efficiency."
+    },
+    {
+        "id": 1,
+        "brand": "NEW Jaguar I‑PACE",
+        "year": "2018",
+        "price": "$69,725",
+        "imageUrl": "https://ibb.co/iXkASS",
+        "description": "The ultimate all-electric performance SUV.."
+    },
+    {
+        "id": 1,
+        "brand": "Jaguar F Type",
+        "year": "2019",
+        "price": "$60,725",
+        "imageUrl": "https://ibb.co/iOGvu7",
+        "description": "Pulse-quickening, pure Jaguar sports car.."
+    },
+    {
+        "id": 1,
+        "brand": "Range Rover Velar",
+        "year": "2018",
+        "price": "$49,990",
+        "imageUrl": "https://ibb.co/jtfoE7",
+        "description": "The avant-garde Range Rover"
+    },
+    {
+        "id": 1,
+        "brand": "RANGE ROVER SPORT",
+        "year": "2018",
+        "price": "$66,725",
+        "imageUrl": "https://ibb.co/guQMZ7",
+        "description": "The most agile and dynamic Land Rover."
+    },
+    {
+        "id": 1,
+        "brand": "RANGE ROVER EVOQUE",
+        "year": "2018",
+        "price": "$41,725",
+        "imageUrl": "https://ibb.co/gmw61n",
+        "description": "Distinctive and individual, a true Range Rover in compact form."
+    },
+    {
+        "id": 1,
+        "brand": "Range Rover PLUG-IN HYBRID",
+        "year": "2018",
+        "price": "$85,725",
+        "imageUrl": "https://ibb.co/cugvu7",
+        "description": "Our most innovative powertrain yet."
+    }
+]
