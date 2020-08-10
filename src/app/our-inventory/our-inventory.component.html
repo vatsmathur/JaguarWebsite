@@ -1,0 +1,103 @@
+<div>
+  <h1 class="container">
+   Welcome to the world of Jaguar - LandRover
+  </h1>
+  <div class="jag_statement">
+  </div>
+
+
+  <div class="panel panel-primary">
+   <div class="panel-heading">
+      <span class="ml15">Glance through our magnificant Inventory
+      </span>
+    </div> 
+    <div class="panel-body">
+      <div class="row">
+         <div class="col-md-2">Search Inventory:
+        </div>
+        <div class="col-md-4">
+          <input type="text" [(ngModel)]="filterData" style="color:#333"/>
+          <span class="glyphicon glyphicon-search pl5">
+          </span>
+        </div>
+      </div> 
+      <span>Searched by : {{filterData}}
+      </span>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Analysis result:
+          </h4>
+        </div>
+      </div>
+      <div class="table_profile_note">{{title}}
+      </div>  
+      <div class="table_profile_note">{{showImage?"Customize my own Jaguar activated":"Customize my own Jaguar de-activated"}}
+      </div>
+     <div class="table-responsive" *ngIf="jaguarLandRover && jaguarLandRover.length">
+       <table class="table jag_table">
+          <thead>
+            <tr>
+              <th>
+                Brand
+              </th>
+              <th>
+                Year
+              </th>
+              <th>
+                Price
+              </th>
+              <th>
+                Description
+              </th>
+              <th>
+                Showcasing the Jaguar       
+              </th>
+              <th>
+                  CSAT ratings
+                </th>
+              <th>
+                Build Your Own Jaguar
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let jlr of jaguarLandRover | productFilter: filterData">
+              <td><a [routerLink]="['/products',jaguarLandRover.id]"
+                [queryParams]="{brand:jaguarLandRover.brand, year: jaguarLandRover.year, price:jaguarLandRover.price}">{{jlr.brand}}</a>
+              </td>
+              <td>{{jlr.year}}
+              </td>
+              <td>
+                <strong>{{jlr.price}}
+                </strong>  
+              </td>
+              <td>
+                <img [src]="jlr.imageUrl" alt="{{jlr.model}}" *ngIf="showImage" [style.width.px]="imageWidth"/>
+              </td>
+              <td>{{jlr.description}}
+              </td>
+              <td>{{jlr.star}}
+                 <div class="mt10">star rating goes here
+                  <div>
+                    <star-comp [rating]="jlr.star" (ratingClicked)="onDataReceive($event)">  </star-comp>
+                 </div>
+                </div>
+              </td>
+              <td>
+                <button [routerLink]="['/personalizeMyJaguar']" class="btn btn-success disp_block" (click)="toggleImage()">{{customizeMyOwnJaguar}}
+                </button>
+                <button class="btn btn-success mt10">Book a test drive
+                </button>
+               
+              </td>
+              
+            </tr>
+          </tbody>
+        </table> 
+        <hr/>
+        
+       
+      </div>
+    </div>
+  </div> 
+</div>

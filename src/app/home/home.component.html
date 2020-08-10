@@ -1,0 +1,31 @@
+ <h2 class="disp_block">Explore the world of Jaguar !
+</h2>
+<span>Jaguar Land Rover Automotive PLC is the holding company of Jaguar Land Rover Limited, a British multinational automotive company with its headquarters in Whitley, Coventry, United Kingdom, and a subsidiary of Indian automotive company Tata Motors. The principal activity of Jaguar Land Rover Limited is the design, development, manufacture and sale of vehicles bearing the Jaguar and Land Rover marques. Both marques have long and complex histories prior to their merger – Jaguar going back to the 1930s and Land Rover to the 1940s – first coming together in 1968 as part of the ill-fated British Leyland conglomerate, later again independent of each other, and then as subsidiaries of BMW (in the case of Land Rover), and Ford Motor Company (Jaguar). Ford acquired Land Rover from BMW in 2000 following the break-up of the former Rover Group, which was effectively the remainder of the British Leyland car producing companies.
+ 
+    Jaguar Land Rover has been a subsidiary of Tata Motors since they founded it for the acquisition of Jaguar Cars Limited and Land Rover from Ford in 2008. On 1 January 2013 the operations of Jaguar Cars Limited and Land Rover were merged as Jaguar Land Rover Limited and the parent was renamed to Jaguar Land Rover Automotive PLC.</span>
+ <ul *ngFor="let jlr of jaguarLandRover">
+  <li class="disp_inline">
+    <h2>{{jlr.brand | uppercase}}
+    </h2>
+  </li>
+  <li class="disp_inline pl5">
+    <h3> Year : {{jlr.year}}
+    </h3>
+  </li>
+  <li>
+    <img src="{{jlr.imageUrl}}" alt="{{jlr.model}}" height="375" width="625">
+  </li>
+  <li class="mt20 mb20">{{jlr.description}}
+  </li>
+  <li class="mt20 mb20">
+    <strong>{{jlr.price}}
+    </strong>
+  </li>
+  <li>
+    <button class="btn btn-success">Build your own JLR
+    </button> 
+    <button class="btn btn-success">Book a test drive
+    </button>
+  </li>
+</ul>  
+
